@@ -1,9 +1,7 @@
 # openthesaurus-mariadb-docker
-Docker image built on mariadb with latest [OpenThesaurus](https://www.openthesaurus.de) database.
+Docker image built on the [mariadb image](https://hub.docker.com/_/mariadb) containing latest [OpenThesaurus](https://www.openthesaurus.de) database. Useful for looking up German synonyms/hypernyms in NLP applications.
 
 To use, run the following (substitute user/password and db data):
-
-`docker build -t ramonziai/openthesaurus-mariadb-docker ./`
 
 `docker run --name openthesaurus -e MYSQL_ROOT_PASSWORD=root-password -e MYSQL_DATABASE=db-name -e MYSQL_USER=db-user -e MYSQL_PASSWORD=db-pass -d -p 3306:3306 ramonziai/openthesaurus-mariadb-docker`
 
