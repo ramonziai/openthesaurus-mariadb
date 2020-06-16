@@ -1,5 +1,5 @@
 # openthesaurus-mariadb-docker
-Docker image built on mariadb with latest OpenThesaurus database.
+Docker image built on mariadb with latest [OpenThesaurus](https://www.openthesaurus.de) database.
 
 To use, run the following (substitute user/password and db data):
 
@@ -7,4 +7,6 @@ To use, run the following (substitute user/password and db data):
 
 `docker run --name openthesaurus -e MYSQL_ROOT_PASSWORD=root-password -e MYSQL_DATABASE=db-name -e MYSQL_USER=db-user -e MYSQL_PASSWORD=db-pass -d -p 3306:3306 ramonziai/openthesaurus-mariadb-docker`
 
-After that, you can stop the container using `docker stop openthesaurus` and start it again with `docker start openthesaurus`.
+After that, OpenThesaurus is available at `localhost:3306` in database `db-name` and can be accessed as `db-user` with password `db-pass`. You can stop the container using `docker stop openthesaurus` and start it again with `docker start openthesaurus`.
+
+You may find [DKPro JOTL](https://github.com/dkpro/dkpro-jotl) helpful in accessing and using the database programmatically.
