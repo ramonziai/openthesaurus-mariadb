@@ -9,4 +9,4 @@ To use, run the following (substitute user/password and db data):
 
 After that, OpenThesaurus is available at `localhost:3306` in database `db-name` and can be accessed as `db-user` with password `db-pass`. You can stop the container using `docker stop openthesaurus` and start it again with `docker start openthesaurus`.
 
-You may find [DKPro JOTL](https://github.com/dkpro/dkpro-jotl) helpful in accessing and using the database programmatically.
+You may find [DKPro JOTL](https://github.com/dkpro/dkpro-jotl) and/or [py-openthesaurus](https://github.com/Aid91/py_openthesaurus) (skip sections about database setup) helpful in accessing and using the database programmatically.
