@@ -1,5 +1,5 @@
 # openthesaurus-mariadb
-Docker image built on the [mariadb image](https://hub.docker.com/_/mariadb) containing latest [OpenThesaurus](https://www.openthesaurus.de) database. Useful for looking up German synonyms/hypernyms in NLP applications.
+Docker image built on the [mariadb image](https://hub.docker.com/_/mariadb) containing latest [OpenThesaurus](https://www.openthesaurus.de) database. Useful for looking up German synonyms in NLP applications.
 
 To use, run the following (substitute user/password and db data):
 
